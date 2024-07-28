@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "SoruxGPT",
   description: "SoruxGPT Docs",
+  base: "/docs/",
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
