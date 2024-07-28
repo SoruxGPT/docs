@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "SoruxGPT"
-  text: "SoruxGPT 介绍"
+  text: "积累为 10000+ 官网用户和 200000+ 用户提供服务的 AIGC 镜像站点"
   tagline: SoruxGPT 官方生态介绍 (www.soruxgpt.com)
   actions:
     - theme: brand
