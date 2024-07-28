@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "SoruxGPT",
   description: "SoruxGPT Docs",
@@ -8,7 +7,8 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '生态介绍', link: '/env' },
-      { text: '购买介绍', link: '/buy' }
+      { text: '购买介绍', link: '/buy' },
+      { text: '监控服务', link: 'https://status.sorux.cn/status/sorux-gpt' }
     ],
 
     sidebar: [
