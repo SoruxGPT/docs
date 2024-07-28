@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: "SoruxGPT"
-  text: "SoruxGPT 官方生态介绍"
-  tagline: SoruxGPT (www.soruxgpt.com) 积累为 10000+ 官网用户和 200000+ 用户提供服务的 AIGC 镜像站点。
+  text: "SoruxGPT 官方介绍"
+  tagline: SoruxGPT (www.soruxgpt.com) 已积累为 10000+ 官网用户和 200000+ 用户提供服务。
   actions:
     - theme: brand
       text: 官网服务
@@ -23,4 +23,3 @@ features:
   - title: 技术领先
     details: SoruxGPT 技术自立，完全自研。不同于市面上大部分依赖第三方网关的服务，SoruxGPT 独立解决包括 ChatGPT / Claude / MidJourney 等在内的镜像 / API 逆向服务。
 ---
-
