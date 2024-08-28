@@ -1,6 +1,6 @@
 # 生态介绍
 
-SoruxGPT 目前含有的服务包括如下。  
+SoruxGPT 目前含有的服务包括如下:  
 SoruxGPT 官网站点已积累为 10000+ 用户提供服务，SoruxGPT B 端服务已积累为全网几十万用户提供技术支持。
 
 ## 面向 C 端用户
@@ -11,6 +11,13 @@ SoruxGPT 官网站点已积累为 10000+ 用户提供服务，SoruxGPT B 端服�
 :::tip
   请注意，SoruxGPT 官网的域名只有：www.soruxgpt.com。
   任何非本域名的商家均非 SoruxGPT 官网服务，属于 SoruxGPT 渠道版客户。
+:::
+
+:::tip
+  SoruxGPT 官网域名如下：
+  - www.soruxgpt.com
+  - hk.soruxgpt.com
+  - service.soruxgpt.com
 :::
 
 ## 面向 B 端客户
