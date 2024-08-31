@@ -30,6 +30,7 @@ export default defineConfig({
         text: '用户服务',
         items: [
           { text: 'SoruxGPT 常见问题', link: '/faq' },
+          { text: 'SoruxGPT 功能说明', link: '/intro' },
         ]
       },
       {
