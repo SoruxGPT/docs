@@ -35,3 +35,4 @@ share添加账号的三种方式：
 2～3需要你提供 Yes Captcha 的打码密钥，可通过 [YesCaptcha](https://yescaptcha.com/i/VNJzq7) 注册
 2. 输入邮箱账号，密码随意，session为空，可以直接向指定邮箱发送登录链接，形式是 https://claude.ai/magic-link#xxxxx ，你把这个链接填入 session 栏，可自动登录
 3. 输入 outlook 或者 hotmail 的邮箱，且填写邮箱密码。claude share server 可以自动通过邮箱账号密码获取 sessionKey。
+

@@ -17,6 +17,7 @@ export default defineConfig({
         text: '生态介绍',
         items: [
           { text: 'SoruxGPT 现有服务', link: '/env' },
+          { text: 'SoruxGPT 更新说明', link: '/gptreleases' },
         ]
       },
       {
@@ -49,6 +50,8 @@ export default defineConfig({
         text: '购买介绍',
         items: [
           { text: 'SoruxGPT 购买方式', link: '/buy' },
+          { text: 'SoruxGPT 隐私协议', link: '/privacy' },
+          { text: 'SoruxGPT 用户协议', link: '/terms' },
         ]
       }
     ],
