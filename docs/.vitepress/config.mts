@@ -53,6 +53,7 @@ export default defineConfig({
           { text: 'SoruxGPT 购买方式', link: '/buy' },
           { text: 'SoruxGPT 隐私协议', link: '/privacy' },
           { text: 'SoruxGPT 用户协议', link: '/terms' },
+          { text: 'SoruxGPT 语音模式', link: '/voice' },
         ]
       }
     ],
