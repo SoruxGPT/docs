@@ -40,6 +40,14 @@ SoruxGPT 拥有独立的 ASN 和代理池，为每一个账号提供优质 IP �
 
 SoruxGPT 解决了降智问题。此问题部分情况下直连官网可复现，但是我们通过独家的 IP + 浏览器指纹等伪装技术帮你绕过了 OpenAI 的风控措施，让你的 ChatGPT 可以发挥最大的潜力。
 
+### 官网 UI 1:1 复刻语音对话 <Badge type="warning" text="本站特色" />
+
+SoruxGPT 通过自己独特的技术，以 1:1 的形式复刻的官网的语音 UI，给用户最优质的体验。
+
+### 独家通信压缩技术 <Badge type="warning" text="本站特色" />
+
+SoruxGPT 通过自己独特的技术，以 SoruxGPT 私有通信协议替换 ChatGPT 通信协议，可以节省约 99.1 % 的流量请求。
+
 
 ## Claude 用户服务
 

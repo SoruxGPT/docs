@@ -9,6 +9,9 @@ hero:
     - theme: brand
       text: 官网服务
       link: https://www.soruxgpt.com
+    - theme: brand
+      text: 使用教程
+      link: /use
     - theme: alt
       text: 生态介绍
       link: /env

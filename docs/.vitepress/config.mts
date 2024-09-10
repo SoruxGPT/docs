@@ -54,6 +54,7 @@ export default defineConfig({
           { text: 'SoruxGPT 隐私协议', link: '/privacy' },
           { text: 'SoruxGPT 用户协议', link: '/terms' },
           { text: 'SoruxGPT 语音模式', link: '/voice' },
+          { text: 'SoruxGPT 使用教程', link: '/use' },
         ]
       }
     ],
