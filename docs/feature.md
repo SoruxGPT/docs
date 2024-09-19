@@ -48,6 +48,10 @@ SoruxGPT 通过自己独特的技术，以 1:1 的形式复刻的官网的语音
 
 SoruxGPT 通过自己独特的技术，以 SoruxGPT 私有通信协议替换 ChatGPT 通信协议，可以节省约 99.1 % 的流量请求。
 
+### GPTs授权登录 <Badge type="warning" text="本站特色" />
+
+SoruxGPT 支持第三方网站授权 GPTs。注意，这可能会带来隐私泄漏，请见隐私说明章节。
+
 
 ## Claude 用户服务
 
