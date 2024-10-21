@@ -81,3 +81,26 @@ Non 200 Code
     "code":"" // (可选)填写验证码，使用验证码直接登录
 }
 ```
+
+## DOCUMENT_NOTIFY_URL <Badge type="tip" text="POST" />
+
+```json
+{
+	"ExtractedContent": "文件内容",
+	"FileName":         "文件名字",
+	"FileType":         "文件类型",
+	"FileSize":         114514,
+}
+```
+
+以异步的形式，在用户上传完文件后通知到指定服务
+
+## RESPONSE_NOTIFY_URL <Badge type="tip" text="POST" />
+
+```json
+{
+	"Data": "SSE流完整内容",
+}
+```
+
+以异步的形式，在用户上传完文件后通知到指定服务
