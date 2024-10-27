@@ -2,6 +2,19 @@
 :::tip
 前往 [SoruxGPT 官网](https://www.soruxgpt.com)，体验最新的[SoruxGPT 程序](https://chat.soruxgpt.com)！
 :::
+
+## 20241027-1
+基于现在 o1 模型系列次数极少，为平衡每一个人的使用体验 ，SoruxGPT 上线了次数倍率，目前暂定为：
+一次 o1-mini 提问 = 2次 GPT-4o 提问
+一次 o1-preview 提问 = 8次 GPT-4o 提问
+以后将根据实际需求进行进一步调整
+
+## 20241022-1
+1. 优化反降智模块在转号时可能不工作的 BUG
+2. 由于 OpenAI 彻底修复 Team 下个人工作区的 BUG，因此已默认移除所有 Team 个人工作区（相应的，我们后台增加了一些账号以抵扣次数损失）
+3. 修复部分bug
+4. 适配新的下载 API
+
 ## 20241014-1
 1. 修复部分特性功能仅在IOS环境中生效的Bug，同时由于基本上 OpenAI 功能优先适配 IOS端，已模拟所有客户端为IOS设备（如需要使用Android App请在群文件下载，IOS因为上架原因暂时不支持SoruxGPT App下载）
 2. 昨日发布的压缩v2已测试完毕，修复了Beta版本下的因为链接导致消息预览错误的BUG
