@@ -20,13 +20,21 @@ SoruxGPT 支持自定义指令，每个 SoruxGPT 用户可以单独设置自定�
 
 SoruxGPT 支持高速访问，采用多种缓存技术，实现极低对话延迟，秒发消息，高速响应。
 
-### 聊天记录本地化 & 跨节点对话漫游 <Badge type="warning" text="本站特色" />
+### 异地计算 <Badge type="warning" text="本站特色" />
+
+SoruxGPT 针对 OpenAI 设置的若干校验器，使用 SoruxGPT Cloud Calc (SoruxGPT 云上安全计算) 异地计算响应，支持秒级对话回复，且不消耗本地设备算力。
+
+### 聊天记录本地化 <Badge type="warning" text="本站特色" />
 
 SoruxGPT 支持将你的聊天记录保存在服务器本地，为你的资料存档。同时，你的对话会支持在 SoruxGPT 云端服务器保存，无论 OpenAI 是否注销该账号，我们都会保留，或根据你的操作手动删除对话记录。
 
+### 无感换号聊 <Badge type="warning" text="本站特色" />
+
+SoruxGPT 支持以无感的方式继续换号聊天，让用户几乎体会不到 GPT 的账号次数限制。
+
 ### GPTs 隔离 <Badge type="warning" text="本站特色" />
 
-SoruxGPT 支持将实现 GPTs 隔离功能，不同用户之间 GPTs 不互相可见。
+SoruxGPT 支持将实现 GPTs 隔离功能，不同用户之间 GPTs 不互相可见，免除广告打扰。
 
 ### 错误提示友好 <Badge type="warning" text="本站特色" />
 
@@ -36,9 +44,21 @@ SoruxGPT 针对 OpenAI 错误提示做针对性汉化，直接给出用户适当
 
 SoruxGPT 拥有独立的 ASN 和代理池，为每一个账号提供优质 IP 代理服务。
 
+### 聊天优化分享 <Badge type="warning" text="本站特色" />
+
+SoruxGPT 拥有对话页面分享功能，可以方便快捷和高效地向他人分享你的对话内容。此外，SoruxGPT 的分享立足于 SoruxGPT Share Center，不同于 OpenAI，我们可以分享带有附件，图片的对话内容。
+
 ### 降智问题解决 <Badge type="warning" text="本站特色" />
 
 SoruxGPT 解决了降智问题。此问题部分情况下直连官网可复现，但是我们通过独家的 IP + 浏览器指纹等伪装技术帮你绕过了 OpenAI 的风控措施，让你的 ChatGPT 可以发挥最大的潜力。
+
+### 临碎功能支持 <Badge type="warning" text="本站特色" />
+
+SoruxGPT 支持 UI 界面上的任何功能，包括管理对话（删除对话、归档对话）等等内容。且开启了 OpenAI Debug Tools，方便用户快捷使用 Debug Tool 查看会话树。
+
+### AutoFix <Badge type="warning" text="本站特色" />
+
+SoruxGPT 支持 UI 界面上的任何功能，包括管理对话（删除对话、归档对话）等等内容。且开启了 OpenAI Debug Tools，方便用户快捷使用 Debug Tool 查看会话树。
 
 ### 官网 UI 1:1 复刻语音对话 <Badge type="warning" text="本站特色" />
 

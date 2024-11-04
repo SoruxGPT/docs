@@ -3,6 +3,11 @@
 前往 [SoruxGPT 官网](https://www.soruxgpt.com)，体验最新的[SoruxGPT 程序](https://chat.soruxgpt.com)！
 :::
 
+## 20241104-1
+1. 修复分享对话的错误
+2. 优化部分逻辑
+3. 同步最新 OpenAI 静态
+
 ## 20241027-1
 基于现在 o1 模型系列次数极少，为平衡每一个人的使用体验 ，SoruxGPT 上线了次数倍率，目前暂定为：
 一次 o1-mini 提问 = 2次 GPT-4o 提问
