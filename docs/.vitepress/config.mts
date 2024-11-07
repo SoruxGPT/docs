@@ -45,6 +45,7 @@ export default defineConfig({
         items: [
           { text: 'SoruxGPT Claude 部署常见问题', link: '/claude-problem' },
           { text: 'SoruxGPT Claude API', link: '/claude-api' },
+          { text: 'SoruxGPT ChatGPT SaaS API', link: '/gpt-api' },
         ]
       },
       {
