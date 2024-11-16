@@ -58,7 +58,8 @@ SoruxGPT 支持 UI 界面上的任何功能，包括管理对话（删除对话�
 
 ### AutoFix <Badge type="warning" text="本站特色" />
 
-SoruxGPT 支持 UI 界面上的任何功能，包括管理对话（删除对话、归档对话）等等内容。且开启了 OpenAI Debug Tools，方便用户快捷使用 Debug Tool 查看会话树。
+SoruxGPT 支持 AutoFix 功能，在界面上遇到 A Error Occur 等错误时，会自动发起 AutoFix 请求以操作后端服务器重新构建会话请求，修复 OpenAI 某些情况下出现的问题。
+
 
 ### 官网 UI 1:1 复刻语音对话 <Badge type="warning" text="本站特色" />
 
