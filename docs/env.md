@@ -27,6 +27,8 @@ SoruxGPT 官网站点已积累为 10000+ 用户提供服务，SoruxGPT B 端服�
   - SoruxGPT Claude Share Gateway：为 Claude 提供网关服务，也可以单独当作镜像使用。
   - SoruxGPT MidJourney Share：[点击跳转](https://github.com/SoruxGPT/soruxgpt-midjourney-share-server-deploy), 为商家提供 SoruxGPT MidJourney Share 服务。
   - SoruxGPT MidJourney Share Gateway：为 MidJourney 提供网关服务，也可以单独当作镜像使用。
+  - SoruxGPT Sora Share：为商家提供 SoruxGPT Sora Share 服务。
+  - SoruxGPT Sora Share Gateway：为 Sora 提供网关服务，也可以单独当作镜像使用。
   - SoruxGPT ChatGPT Gateway 服务：为商家提供解决降智，绝大部分风控问题，CF 5 秒盾，Arkose，Pow，Turnstile 等问题的网关服务。
   - SoruxGPT Chat2Api 服务：为商家提供 Chat To Api 服务。
   - SoruxGPT ChatGPT SaaS：为商家提供 SaaS GPT 服务。
