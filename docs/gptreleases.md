@@ -3,6 +3,9 @@
 前往 [SoruxGPT 官网](https://www.soruxgpt.com)，体验最新的[SoruxGPT 程序](https://chat.soruxgpt.com)！
 :::
 
+## 20250110-1
+1. 引入一堆更新
+
 ## 20241104-1
 1. 修复分享对话的错误
 2. 优化部分逻辑

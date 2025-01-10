@@ -73,6 +73,25 @@ SoruxGPT 通过自己独特的技术，以 SoruxGPT 私有通信协议替换 Cha
 
 SoruxGPT 支持第三方网站授权 GPTs。注意，这可能会带来隐私泄漏，请见隐私说明章节。
 
+### Api支持 <Badge type="warning" text="本站特色" />
+
+SoruxGPT 支持 Api 模型集成，允许在镜像站内点使用 Api 模型，并且无缝接管 GPT 聊天的上下文等等。
+
+### 高级思考 <Badge type="warning" text="本站特色" />
+
+SoruxGPT 支持全局类似 Pro 的高级思考过程。
+
+### Project 隔离 <Badge type="warning" text="本站特色" />
+
+SoruxGPT 支持 Project 用户级别隔离。
+
+### 记忆隔离 <Badge type="warning" text="本站特色" />
+
+SoruxGPT 支持记忆用户级别隔离。
+
+### Project 重建 <Badge type="warning" text="本站特色" />
+
+SoruxGPT 支持底层账号所属的 Project 因账号被封号导致的丢失自动重建。
 
 ## Claude 用户服务
 
