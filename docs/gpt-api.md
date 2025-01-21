@@ -35,9 +35,9 @@ SoruxGPT Next 支持 API 形式加号，支持 rc, rk, rt, at, app 模式的加�
 
 向 /adminapi/stateAccount 发送 POST 请求
 
-## Audit 接口 <Badge type="tip" text="POST" />
+## Audit 接口 / Notify 接口 <Badge type="tip" text="POST" />
 :::tip
-SoruxGPT Next 支持 Audit 用户审计
+SoruxGPT Next 支持 Audit / Notify 接口进行用户审计
 :::
 
 请求内容：
@@ -50,7 +50,8 @@ SoruxGPT Next 支持 Audit 用户审计
 2. 状态码非 200 表示异常，并且把返回 Json 的 detail.message 字段作为错误信息展示给前端
 
 :::tip
-在语音提问的场景下，如果携带了 queries，表示用户一次性对话了多少条。例如，如果这个值为 queries = 2，那么你需要计费 2 次
+在语音提问的场景下，如果携带了 queries，表示用户一次性对话了多少条。例如，如果这个值为 queries = 2，那么你需要计费 2 次。
+Notify 接口也会回传用户提问的 body。请注意，如果用户的对话发生了错误进行了转号，网关消耗次数可能多于 notify/audit 请求的次数。
 :::
 
 ## OAuth 接口 <Badge type="tip" text="POST" />
@@ -67,6 +68,9 @@ SoruxGPT Next 支持 Audit 用户审计
 3. 【可选】email：邮箱地址，如果不填默认为 default-user@gmail.com
 4. 【可选】nickname：昵称，如果不填默认为 default-user
 5. 【可选】uid：用户 ID，如果不填默认为 1
+6. 【可选】priority：优先使用的账号类型：可以为 pro, team, plus
+7. 【可选】apikey：用户绑定的 ApiKey，用于作为 Api 功能的使用密钥
+8. 【可选】forcetoken：以 forcetoken 作为真正使用的 Token。
 
 :::tip
 可选信息不给，不会发生任何错误。
