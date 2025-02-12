@@ -140,3 +140,26 @@ SoruxGPT Next 支持 Audit 用户审计
 注意：
 1. user 表示的是用户的激活码，也就是在 SaaS 系统中，你想要把这个对话绑定的激活码对象
 2. conversations 数组里面可以放置多个会话记录，Json 格式为 /backend-api/conversation/:convId 接口的返回值。可选为官网的返回值，也可以选择为镜像站的返回值
+
+## 网页会话记录导入接口 <Badge type="tip" text="POST" />
+:::tip
+本接口旨在导入官网特定的对话请求
+:::
+
+```json
+{
+    "user": "xxx",
+    "conversations": [
+        {
+            "gpt_account_mail": "",
+            "gpt_account_id": "",
+            "access_token": "",
+            "conversation_id": "",
+        }
+    ]
+}
+```
+
+注意：
+1. user 表示的是用户的激活码，也就是在 SaaS 系统中，你想要把这个对话绑定的激活码对象
+2. conversations 数组里面可以放置多个 ChatGPT 对话信息，会根据 SaaS 内置的数据结构进行拼接。
