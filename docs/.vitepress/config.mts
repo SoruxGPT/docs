@@ -8,7 +8,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '生态介绍', link: '/env' },
       { text: '购买介绍', link: '/buy' },
-      { text: '监控服务', link: 'https://status.sorux.cn/status/sorux-gpt' },
+      { text: '监控服务', link: 'https://status.soruxgpt.com/status/soruxgpt' },
       { text: '官网站点', link: 'https://www.soruxgpt.com' }
     ],
 
