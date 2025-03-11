@@ -126,6 +126,8 @@ SoruxGPT Next 支持 Audit 用户审计
 本接口旨在导入指定对话请求的记录
 :::
 
+向 /adminapi/importConversationBySelf 发送 POST 请求
+
 ```json
 {
     "user": "xxx",
@@ -145,6 +147,8 @@ SoruxGPT Next 支持 Audit 用户审计
 :::tip
 本接口旨在导入官网特定的对话请求
 :::
+
+向 /adminapi/importConversationByWeb 发送 POST 请求
 
 ```json
 {
