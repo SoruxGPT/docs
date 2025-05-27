@@ -54,26 +54,12 @@ SoruxGPT Next 支持 Audit / Notify 接口进行用户审计
 Notify 接口也会回传用户提问的 body。请注意，如果用户的对话发生了错误进行了转号，网关消耗次数可能多于 notify/audit 请求的次数。
 :::
 
-## OAuth 接口 <Badge type="tip" text="POST" />
-:::tip
-SoruxGPT Next 支持 Audit 用户审计
-:::
+:::tip 
+Audit 接口支持 Request Body Modifier 的能力，具体说明如下：
+1. 返回的响应携带头：SaaS-Body-Modifier，且值不为空的情况下，我们会对 Response 进行 Json 反序列化处理，并且将返回的 Json 的 modifier 对象作为后文 SaaS 请求的 Body Json。
+2. 本流程的顺序为： SaaS 分配账号 > SaaS 对 Api 做预处理 > SaaS Audit > SaaS Body Modifier（可选）> SaaS Body Switch
 
-请求内容：
-1. Form-Data 格式请求，传递 usertoken 信息
-
-返回 Json 格式的回复，你需要包含以下属性：
-1. code: 1 表示成功，0 表示失败。
-2. 【可选】avatar：头像地址，应为一个 url 绝对地址
-3. 【可选】email：邮箱地址，如果不填默认为 default-user@gmail.com
-4. 【可选】nickname：昵称，如果不填默认为 default-user
-5. 【可选】uid：用户 ID，如果不填默认为 1
-6. 【可选】priority：优先使用的账号类型：可以为 pro, team, plus
-7. 【可选】apikey：用户绑定的 ApiKey，用于作为 Api 功能的使用密钥
-8. 【可选】forcetoken：以 forcetoken 作为真正使用的 Token。
-
-:::tip
-可选信息不给，不会发生任何错误。
+这意味着你最迟可以在分配账号之后，最早可以在 SaaS 对对话做处理（添加上下文信息等）操作前完成对于 Body 内容的修改
 :::
 
 ## OAuth 接口 <Badge type="tip" text="POST" />
