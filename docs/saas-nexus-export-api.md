@@ -73,8 +73,11 @@
 - conversation_id: 当前的对话 ID
 - provider: 值恒为 sorux_nexus，表示 metadata 提供者
 - user_id: 当前提问本身的消息 ID
+- title: 本地对话的 ID
 
 如果你需要接着 assistant_id 往下面对话，那么你的 last_id 应该是 assistant_id.
+
+以上为平台均有的 metadata，但是部分平台会提供额外的 metadata 细节，其中有些需要你在控制平台细节的时候，显式返回这些细节，请注意查看下方文档。
 
 ## 平台参数控制
 
@@ -90,8 +93,24 @@
 
 ### Claude
 
-- web_search: true/false，是否开启网络搜索
-- thinking: true/false，是否开启思考功能
-- compress_assets: true/false，是否开启压缩文件功能，如果平台有 Project 功能，那么会由 Project 功能接管而不是 Nexus 的 OSS 接管
-- compass: true/false，是否开启搜索功能
-- variant: true/false，是否为切换功能
+- web_search: bool，是否开启网络搜索
+- thinking: bool，是否开启思考功能
+- compress_assets: bool，是否开启压缩文件功能
+- compass: bool，是否开启搜索功能
+- variant: bool，是否为重新生成
+
+### Grok
+
+#### 模型
+
+为了呼应官网的 Auto 模式，我们虚拟了一个模型名为 "grok-4-auto", 你可以使用 "grok-4-auto" 的格式请求
+
+#### 参数特性
+
+- force_model_mode: str，默认为 Nexus 填写，你可以覆写本属性，默认的对应关系与官网一致，其中虚拟模型 "grok-4-auto" 为 "MODEL_MODE_AUTO"
+- disable_search: bool，注意这是一个反转选项，因为 grok 默认开启搜索
+- image: bool, 是否开启图片生成
+- image_generate_count: int，默认为 2
+- compress_assets: bool，是否开启压缩文件功能
+- variant: bool，是否为重新生成
+- disable_artifact: bool，是否禁止使用 Artifact
