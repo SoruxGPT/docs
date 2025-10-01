@@ -46,6 +46,7 @@ export default defineConfig({
         text: 'SaaS Nexus',
         items: [
           { text: '介绍', link: '/saas-nexus-intro' },
+          { text: 'Export API', link: '/saas-nexus-export-api' },
         ]
       },
       {
