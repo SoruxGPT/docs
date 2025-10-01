@@ -14,4 +14,4 @@ SaaS Nexus 文档正在开工中，由于 SaaS Nexus 处于刚发布状态，因
 
 ## SaaS Nexus Export API
 
-SaaS Nexus Export API 为继承 OpenAI API 格式后，还拥有其他许多控制平台特性的专属 API 格式，既完美兼容现有的 API 格式，还完全支持操作其他平台特性，目前正在有许多平台的 Export API 正在接入
+SaaS Nexus Export API 为继承 OpenAI API 格式后，还拥有其他许多控制平台特性的专属 API 格式，既完美兼容现有的 API 格式，还完全支持操作其他平台特性，目前正在有许多平台的 Export API 正在接入.
