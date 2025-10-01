@@ -43,6 +43,12 @@ export default defineConfig({
         ]
       },
       {
+        text: 'SaaS Nexus',
+        items: [
+          { text: '介绍', link: '/saas-nexus-intro' },
+        ]
+      },
+      {
         text: '技术支持',
         items: [
           { text: 'SoruxGPT Claude 部署常见问题', link: '/claude-problem' },
