@@ -19,7 +19,7 @@
                 },
                 {
                     "type": "text",
-                    "text": "sss"
+                    "content": "sss"
                 }
             ]
         }
@@ -296,7 +296,7 @@ curl --location '{Host}/backend-api/expose/api' \
             "content": [
                 {
                     "type": "text",
-                    "text": "文件的内容是？"
+                    "content": "文件的内容是？"
                 },
                 {
                     "type": "file_asset",
