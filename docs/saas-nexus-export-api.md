@@ -141,3 +141,198 @@ Header: `Authorization: Bearer <Your Token here>`
     "success": true
 }
 ```
+
+
+## 例子
+
+### 继续对话
+
+我们以 Claude 模型为例子：
+
+```bash
+curl --location '{Host}/backend-api/expose/api' \
+--header 'Authorization: Bearer {Token}' \
+--header 'Content-Type: application/json' \
+--data '{
+    "model": "claude-sonnet-4-5-20250929",
+    "messages": [
+        {
+            "role": "user",
+            "content": "你好"
+        }
+    ]
+}'
+```
+
+我们随意抓取一个 Response，例如：
+
+```json
+{
+    "choices": [
+        {
+            "delta": {
+                "content": "有什么我可以帮助",
+                "role": "assistant"
+            },
+            "finish_reason": null,
+            "index": 0
+        }
+    ],
+    "created": 1759422405,
+    "id": "23e55130-6af5-4b3a-be62-b595698e53f6",
+    "metadata": {
+        "assistant_id": "5cb45432-cc7f-47ea-92bb-414002d2863b",
+        "conversation_id": "d080fd0d-dfb4-480e-8bd2-a5a7d6753884",
+        "provider": "sorux_nexus",
+        "user_id": "b5eea872-c120-4f28-80b5-4b1bd327aa06"
+    },
+    "model": "claude-sonnet-4-5-20250929",
+    "object": "chat.completion.chunk"
+}
+```
+
+那么如果我们想继续对话的话，只需要：
+
+```bash
+curl --location '{Host}/backend-api/expose/api' \
+--header 'Authorization: Bearer {Token}' \
+--header 'Content-Type: application/json' \
+--data '{
+    "model": "claude-sonnet-4-5-20250929",
+    "messages": [
+        {
+            "role": "user",
+            "content": "我刚刚问了什么"
+        }
+    ],
+    "soruxgpt_nexus_last_id": "5cb45432-cc7f-47ea-92bb-414002d2863b",
+    "soruxgpt_nexus_history_id": "d080fd0d-dfb4-480e-8bd2-a5a7d6753884"
+}'
+```
+
+然后得到回复：
+
+```json
+{
+    "choices": [
+        {
+            "delta": {
+                "content": "刚刚说",
+                "role": "assistant"
+            },
+            "finish_reason": null,
+            "index": 0
+        }
+    ],
+    "created": 1759422502,
+    "id": "a5d0ad88-37a6-4c2f-acb5-2d9995038979",
+    "metadata": {
+        "assistant_id": "3100a5ad-669b-4abc-85a4-be5e9a4beaae",
+        "conversation_id": "d080fd0d-dfb4-480e-8bd2-a5a7d6753884",
+        "provider": "sorux_nexus",
+        "user_id": "ea2eb014-a7a3-42d0-ad1d-66a7613b3686"
+    },
+    "model": "claude-sonnet-4-5-20250929",
+    "object": "chat.completion.chunk"
+}
+```
+
+```json
+{
+    "choices": [
+        {
+            "delta": {
+                "content": "的是\"你好\"，这",
+                "role": "assistant"
+            },
+            "finish_reason": null,
+            "index": 0
+        }
+    ],
+    "created": 1759422502,
+    "id": "a5d0ad88-37a6-4c2f-acb5-2d9995038979",
+    "metadata": {
+        "assistant_id": "3100a5ad-669b-4abc-85a4-be5e9a4beaae",
+        "conversation_id": "d080fd0d-dfb4-480e-8bd2-a5a7d6753884",
+        "provider": "sorux_nexus",
+        "user_id": "ea2eb014-a7a3-42d0-ad1d-66a7613b3686"
+    },
+    "model": "claude-sonnet-4-5-20250929",
+    "object": "chat.completion.chunk"
+}
+```
+
+如果需要携带文件，那么我们可以：
+
+```bash
+curl --location --request PUT '{Host}/backend-api/expose/assets' \
+--header 'Authorization: Bearer {Token}' \
+--header 'Content-Type: application/pdf' \
+--data-binary '@/path/to/your/file'
+```
+
+得到响应:
+
+```json
+{
+    "fileId": "saas_export_file-25d1e0fec569415195345d8a81835b4f",
+    "message": "文件上传成功，您可以通过文件ID使用该文件",
+    "success": true
+}
+```
+
+
+然后我们直接使用它：
+
+```bash
+curl --location '{Host}/backend-api/expose/api' \
+--header 'Authorization: Bearer {Token}' \
+--header 'Content-Type: application/json' \
+--data '{
+    "model": "claude-sonnet-4-5-20250929",
+    "messages": [
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "text",
+                    "text": "文件的内容是？"
+                },
+                {
+                    "type": "file_asset",
+                    "file_id": "saas_export_file-25d1e0fec569415195345d8a81835b4f"
+                }
+            ]
+        }
+    ],
+    "soruxgpt_nexus_last_id": "3100a5ad-669b-4abc-85a4-be5e9a4beaae",
+    "soruxgpt_nexus_history_id": "d080fd0d-dfb4-480e-8bd2-a5a7d6753884"
+}'
+```
+
+得到回复：
+
+```json
+{
+    "choices": [
+        {
+            "delta": {
+                "content": "看到这是一张来自 xxx",
+                "role": "assistant"
+            },
+            "finish_reason": null,
+            "index": 0
+        }
+    ],
+    "created": 1759422705,
+    "id": "e034d724-3abe-4add-b70b-d4e3d59038ee",
+    "metadata": {
+        "assistant_id": "48ba4663-d1aa-4433-b330-31fb83fdf201",
+        "conversation_id": "d080fd0d-dfb4-480e-8bd2-a5a7d6753884",
+        "provider": "sorux_nexus",
+        "user_id": "6d6fe20a-c2c8-4cde-93d5-13fc77326fd1"
+    },
+    "model": "claude-sonnet-4-5-20250929",
+    "object": "chat.completion.chunk"
+}
+```
