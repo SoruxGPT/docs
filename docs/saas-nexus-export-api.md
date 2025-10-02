@@ -42,6 +42,10 @@
 
 ## 平台额外参数输出
 
+POST 端点： `{SaaS-Endpoint}/backend-api/expose/api`
+
+Header: `Authorization: Bearer <Your token here>`
+
 ```json
 {
     "choices": [
@@ -79,6 +83,10 @@
 
 以上为平台均有的 metadata，但是部分平台会提供额外的 metadata 细节，其中有些需要你在控制平台细节的时候，显式返回这些细节，请注意查看下方文档。
 
+:::tip
+注意，我们支持提供参数 non_permit_fallback: bool，这是一个反转选项，如果开启，那么在我们没有寻找到所属对话的账号时，我们将显式返回报错，而不是为您调度上下文重新分配一个账号
+:::
+
 ## 平台参数控制
 
 我们为不同的平台提供了若干参数精细控制，你可以在对应的分类中找到属性和可接受的值类型。
@@ -114,3 +122,22 @@
 - compress_assets: bool，是否开启压缩文件功能
 - variant: bool，是否为重新生成
 - disable_artifact: bool，是否禁止使用 Artifact
+
+
+## 资产中转
+
+由于部分的 API 有文件资产中转的需求，我们为您提供如下 API：
+
+PUT: `{SaaS-EntPoint}/backend-api/expose/assets`
+
+Header: `Authorization: Bearer <Your Token here>`
+
+文件通过 Body 传递后，你应该可以得到如下回复：
+
+```json
+{
+    "fileId": "saas_export_file-1c121c70261e49f4bd6dde2e58b526d9",
+    "message": "文件上传成功，您可以通过文件ID使用该文件",
+    "success": true
+}
+```
