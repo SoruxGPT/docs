@@ -44,6 +44,10 @@
 
 POST 端点： `{SaaS-Endpoint}/backend-api/expose/api`
 
+:::tip
+替代 API: `{SaaS-EntPoint}/backend-api/expose/v1/chat/completions`
+:::
+
 Header: `Authorization: Bearer <Your token here>`
 
 ```json
@@ -85,6 +89,10 @@ Header: `Authorization: Bearer <Your token here>`
 
 :::tip
 注意，我们支持提供参数 non_permit_fallback: bool，这是一个反转选项，如果开启，那么在我们没有寻找到所属对话的账号时，我们将显式返回报错，而不是为您调度上下文重新分配一个账号
+:::
+
+:::tip
+注意，我们支持提供参数 is_cached_account: bool，如果开启，那么会优先调度到同一个号，这个在你的账号池子有非常多普通账号的时候适用。
 :::
 
 ## 平台参数控制
@@ -137,6 +145,10 @@ Sora 不支持中继对话。
 由于部分的 API 有文件资产中转的需求，我们为您提供如下 API：
 
 PUT: `{SaaS-EntPoint}/backend-api/expose/assets`
+
+:::tip
+替代 API: `{SaaS-EntPoint}/backend-api/expose/v1/files`
+:::
 
 Header: `Authorization: Bearer <Your Token here>`
 
