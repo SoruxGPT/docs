@@ -123,6 +123,14 @@ Header: `Authorization: Bearer <Your token here>`
 - variant: bool，是否为重新生成
 - disable_artifact: bool，是否禁止使用 Artifact
 
+### Sora
+
+Sora 不支持中继对话。
+
+- sub_model_name: str，替代模型名称，如果有的话那么替代模型名称，默认为 sy_8
+- orientation: str，风格，默认为 landscape。注意，本选项亦可以通过模型名称制定(sora2_video-landscape, sora2_video-portrait)
+- size: str, 大小，默认为 small
+- n_frames: int，帧数，默认为 300
 
 ## 资产中转
 
