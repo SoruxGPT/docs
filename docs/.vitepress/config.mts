@@ -39,7 +39,8 @@ export default defineConfig({
           { text: 'SoruxGPT Claude 部署', link: '/claude-deploy' },
           { text: 'SoruxGPT MidJourney 部署', link: '/midjourney-deploy' },
           { text: 'SoruxGPT Sora 部署', link: '/sora-deploy' },
-          { text: 'SoruxGPT SaaS GPT', link: '/gpt-saas' },
+          { text: 'SoruxGPT SaaS GPT 部署', link: '/gpt-saas' },
+          { text: 'SoruxGPT Connect 部署', link: '/connect-deploy' },
         ]
       },
       {

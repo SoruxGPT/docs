@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "SoruxGPT"
   text: "SoruxGPT 官方介绍"
-  tagline: SoruxGPT (www.soruxgpt.com) 已积累为 10000+ 官网用户和 200000+ 用户提供服务。
+  tagline: SoruxGPT (www.soruxgpt.com) 已积累为 40000+ 官网用户和 400000+ 用户提供服务，日请求 30M +。
   actions:
     - theme: brand
       text: 官网服务

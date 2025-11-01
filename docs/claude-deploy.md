@@ -1,6 +1,6 @@
 # 授权说明
 
-在使用本教程之前，请先联系微信：xosoder 购买 Claude 网关和程序服务。  
+在使用本教程之前，请先联系邮箱：epicmocn@gmail.com 购买 Claude 网关和程序服务。  
 
 # 部署支持
 

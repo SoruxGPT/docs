@@ -140,6 +140,13 @@ Sora 不支持中继对话。
 - size: str, 大小，默认为 small
 - n_frames: int，帧数，默认为 300
 
+### Codex
+
+特别的，Codex 无需提供 last_id，只需要提供 history_id.
+
+- effort: 思考级别
+
+
 ## 资产中转
 
 由于部分的 API 有文件资产中转的需求，我们为您提供如下 API：
