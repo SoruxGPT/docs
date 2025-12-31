@@ -10,7 +10,7 @@
 
 ### 基于 Docker-Compose 的部署编排
 
-1. 克隆 [Gemini Share Server](https://github.com/SoruxGPT/soruxgpt-gemini-share-deploy) 仓库
+1. 克隆 [Gemini Share Server](https://github.com/SoruxGPT/SoruxGemini) 仓库
 
 2. 编辑 `docker-compose.yml` 文件，参考以下的说明：
 
