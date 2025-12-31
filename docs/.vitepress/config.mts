@@ -36,11 +36,12 @@ export default defineConfig({
       {
         text: '技术部署',
         items: [
-          { text: 'SoruxGPT Claude 部署', link: '/claude-deploy' },
-          { text: 'SoruxGPT MidJourney 部署', link: '/midjourney-deploy' },
-          { text: 'SoruxGPT Sora 部署', link: '/sora-deploy' },
-          { text: 'SoruxGPT SaaS GPT 部署', link: '/gpt-saas' },
-          { text: 'SoruxGPT Connect 部署', link: '/connect-deploy' },
+          { text: 'Sorux Claude 部署', link: '/claude-deploy' },
+          { text: 'Sorux MidJourney 部署', link: '/midjourney-deploy' },
+          { text: 'Sorux Sora 部署', link: '/sora-deploy' },
+          { text: 'Sorux SaaS GPT 部署', link: '/gpt-saas' },
+          { text: 'Sorux Connect 部署', link: '/connect-deploy' },
+          { text: 'Sorux Gemini 部署', link: '/gemini-deploy' },
         ]
       },
       {
